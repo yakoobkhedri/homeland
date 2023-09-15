@@ -1,0 +1,307 @@
+@font-face {
+    font-family: "IRANSans-Regular";
+    src: url('../fonts/IRANSansXFaNum-Regular.woff') format("woff");
+}
+
+@font-face {
+    font-family: "IRANSans-Bold";
+    src: url('../fonts/IRANSansXFaNum-Bold.woff') format("woff");
+}
+html {
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+body {
+    font-family: "IRANSans-Regular";
+    user-select: none;
+    background-color: #e8eaef;
+    overflow-x: hidden;
+}
+
+.font-bold {
+    font-family: "IRANSans-Bold";
+}
+
+.main-text {
+    color: #243b5b;
+}
+
+.main-text2 {
+    color: #495c76;
+}
+
+.main-bg {
+    background-color: #243b5b;
+}
+
+.second-text {
+    color: #c9a759;
+}
+
+.transition {
+    transition: all .4s;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.h-2 {
+    height: 2px;
+}
+
+.w-20 {
+    width: 20px;
+}
+.w-24 {
+    width: 6rem;
+}
+.w-28 {
+    width: 7rem;
+}
+.w-32 {
+    width: 8rem;
+}
+.h-40 {
+    height: 10rem;
+}
+
+.w-40 {
+    width: 10rem;
+}
+
+.pt-6 {
+    padding-top: 4rem;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+.z-1{
+    z-index: -1;
+}
+.z-10{
+    z-index: 10;
+}
+.gap-100 {
+    gap: 100px;
+}
+.text-justify{
+    text-align: justify;
+}
+.rotate-180{
+    transform: rotate(180deg);
+}
+.rounded-4{
+    border-radius: 1rem;
+}
+.border-gray{
+    border: 1px solid rgb(179, 179, 179);
+}
+.custom-shadow{
+    box-shadow: rgba(0, 0, 0, 0.16) 10px 10px 20px;
+}
+.swiper-pagination-bullet {
+    background-color: transparent;
+    border: 1px solid #c9a759;
+    width: 1rem;
+    height: 1rem;
+    opacity: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #c9a759;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 88px;
+    height: 40px;
+    border-radius: .75rem;
+    background-color: white;
+    top: 33px;
+}
+
+.swiper-rtl .swiper-button-prev {
+    left: 117px;
+    right: auto;
+}
+
+.swiper-rtl .swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+    content: '';
+}
+.navbar-toggler:focus,.navbar-toggler:hover {
+  box-shadow: none;
+  background-color: #f9fafb;
+}
+.navbar-toggler {
+    border-radius: 0.44rem;
+}
+.iti__country-list {
+    width: 249px;
+    left: 0;
+    overflow-x: hidden;
+}
+.iti {
+    width: 100%;
+  }
+  .iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+    left: 0;
+  }
+  .select2-container .select2-selection--single {
+    height: 44px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 42px;
+    text-align: center;
+  }
+  .select2-results__option--selectable {
+    text-align: center;
+  }
+  .select2-container {
+    display: inline-block;
+    width: 100%!important;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 10px;
+    right: 11px;
+  }
+  input[type='email'],input[type='number'],.iti--allow-dropdown input{
+    text-align: left;
+  }
+/* header */
+header {
+    background-color: white;
+    z-index: 20;
+}
+header ul li a{
+    border-bottom: 4px solid transparent;
+    transition: all .4s;
+}
+header ul li a:hover{
+    border-bottom: 4px solid #c9a759;
+    color: #243b5b!important;
+}
+header .socials,
+.socials svg {
+    color: #243b5b;
+    fill: #243b5b;
+    transition: all .4s;
+}
+
+header .socials:hover,
+.socials svg:hover {
+    color: #c9a759;
+    fill: #c9a759;
+}
+
+header ul {
+    padding: 0;
+}
+
+/* banner */
+#banner svg,#contact svg {
+    fill: #243b5b;
+}
+
+/* projects */
+#projects svg,
+#blog .swiper .swiper-button-prev svg,
+#blog .swiper .swiper-button-next svg {
+    fill: #c9a759;
+}
+
+#projects .swiper-slide:hover {
+    background-color: #243b5b;
+}
+
+#projects .swiper-slide:hover p {
+    color: white;
+}
+/* istanbulProjects */
+#istanbulProjects{
+    background-image: url('../img/istanbul0add.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#istanbulProjects::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.584);
+  z-index: 0;
+  filter: blur(4px);
+}
+.back{
+    background: linear-gradient(rgba(157, 219, 217, 0.5) 0%, rgba(89, 188, 203, 0.5) 50%, rgba(4, 90, 103, 0.5) 100%);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: all .4s;
+}
+.istanbulProjectsCart:hover .back{
+    opacity: 100%;
+}
+/* services */
+.servicesCard:hover{
+    background-color: #243b5b;
+}
+.servicesCard:hover p,.servicesCard:hover h3{
+    color: #71c7d0!important;
+}
+.servicesCard:hover > div{
+    background-color: #415571!important;
+    box-shadow: 5px 4px 16px 1px black inset;
+    border: none;
+}
+/* footer */
+footer{
+    background-color: #243b5b;
+}
+footer svg{
+    fill: white;
+}
+footer #copyright{
+    background-color: #405470;
+}
+@media only screen and (max-width:992px) {
+    .gap-100 {
+        gap: 0;
+    }
+   header svg{
+    width: 5rem!important;
+   }
+    header ul {
+        background-color: #f9fafb;
+        border: 1px solid rgb(223, 222, 222);
+        border-radius: 6px;
+        padding: 15px 29px !important;
+        margin-top: 22px;
+    }
+    header ul li a{
+        padding: 9px!important;
+        border-radius: 8px;
+        border-bottom: none;
+    
+    }
+    header ul li a:hover{
+        background-color: #f3f4f6;
+        border-bottom: none;
+    }
+    footer .border-end{
+        border-right: none!important;
+    }
+}
