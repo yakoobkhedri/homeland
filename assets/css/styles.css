@@ -38,7 +38,9 @@ body {
 .second-text {
     color: #c9a759;
 }
-
+.bg-gray{
+    background-color: #e8eaef;
+}
 .transition {
     transition: all .4s;
 }
@@ -52,7 +54,9 @@ a {
 .cursor-pointer {
     cursor: pointer;
 }
-
+.top-124{
+    top: 124px;
+}
 .h-2 {
     height: 2px;
 }
@@ -80,7 +84,12 @@ a {
 .pt-6 {
     padding-top: 4rem;
 }
-
+.pb-9 {
+    padding-bottom: 9rem;
+}
+.h-2{
+    height: 2px!important;
+}
 .fs-12 {
     font-size: 12px;
 }
@@ -93,6 +102,9 @@ a {
 }
 .z-10{
     z-index: 10;
+}
+.z-90{
+    z-index: 90;
 }
 .gap-100 {
     gap: 100px;
@@ -223,11 +235,11 @@ header ul {
     fill: #c9a759;
 }
 
-#projects .swiper-slide:hover {
-    background-color: #243b5b;
+#projects .swiper-slide:hover,.projectList:hover {
+    background-color: #243b5b!important;
 }
 
-#projects .swiper-slide:hover p {
+#projects .swiper-slide:hover p,.projectList:hover p {
     color: white;
 }
 /* istanbulProjects */
@@ -261,6 +273,9 @@ header ul {
 }
 .servicesCard:hover p,.servicesCard:hover h3{
     color: #71c7d0!important;
+}
+.servicesCard > div{
+  transition: all .4s;
 }
 .servicesCard:hover > div{
     background-color: #415571!important;
@@ -300,6 +315,9 @@ footer #copyright{
     header ul li a:hover{
         background-color: #f3f4f6;
         border-bottom: none;
+    }
+    #searchBox.position-sticky{
+        position: static!important;
     }
     footer .border-end{
         border-right: none!important;

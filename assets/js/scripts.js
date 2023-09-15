@@ -1,16 +1,3 @@
-// select
-$(document).ready(function() {
-    $('.js-example-basic-single').select2();
-});
-// 
-const input = document.querySelector("#phone");
-window.intlTelInput(input, {
-  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-});
-const input2 = document.querySelector("#phone2");
-window.intlTelInput(input2, {
-  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-});
 // swiper
 var swiper = new Swiper(".projects", {
     loop: true,
@@ -34,6 +21,10 @@ var swiper = new Swiper(".projects", {
       pagination: {
         el: ".swiper-pagination",
       },
+});
+// select
+$(document).ready(function() {
+    $('.js-example-basic-single').select2();
 });
 // gallery Fancybox
 Fancybox.bind("[data-fancybox]", {
