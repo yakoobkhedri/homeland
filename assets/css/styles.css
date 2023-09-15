@@ -240,7 +240,7 @@ header ul {
 }
 
 #projects .swiper-slide:hover p,.projectList:hover p {
-    color: white;
+    color: white!important;
 }
 /* istanbulProjects */
 #istanbulProjects{
