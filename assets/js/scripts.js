@@ -1,3 +1,4 @@
+
 // swiper
 var swiper = new Swiper(".projects", {
     loop: true,
@@ -21,10 +22,6 @@ var swiper = new Swiper(".projects", {
       pagination: {
         el: ".swiper-pagination",
       },
-});
-// select
-$(document).ready(function() {
-    $('.js-example-basic-single').select2();
 });
 // gallery Fancybox
 Fancybox.bind("[data-fancybox]", {

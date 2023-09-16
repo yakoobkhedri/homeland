@@ -118,6 +118,9 @@ a {
 .rounded-4{
     border-radius: 1rem;
 }
+.rounded-5{
+    border-radius: 1.5rem;
+}
 .border-gray{
     border: 1px solid rgb(179, 179, 179);
 }
