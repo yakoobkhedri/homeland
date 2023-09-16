@@ -92,6 +92,9 @@ a {
 .w-160{
     width: 160px;
 }
+.w-230{
+    width: 230px;
+}
 .w-574{
     width: 574px;
 }
@@ -122,6 +125,9 @@ a {
 }
 .z-90{
     z-index: 90;
+}
+.top-18{
+    top: 18%;
 }
 .top-29{
     top: -29px;
@@ -344,6 +350,13 @@ header ul {
 }
 .aboutCircles:hover p{
     color: white;
+}
+.circleContent{
+    opacity: 0;
+    z-index: -3;
+}
+.circleContent.active{
+    opacity: 100%;
 }
 /* footer */
 footer{
