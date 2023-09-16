@@ -41,6 +41,9 @@ body {
 .bg-gray{
     background-color: #e8eaef;
 }
+.border-main{
+    border: 2px solid #243b5b;
+}
 .transition {
     transition: all .4s;
 }
@@ -80,7 +83,21 @@ a {
 .w-40 {
     width: 10rem;
 }
-
+.w-136{
+    width: 136px;
+}
+.h-136{
+    height: 136px;
+}
+.w-160{
+    width: 160px;
+}
+.w-574{
+    width: 574px;
+}
+.h-574{
+    height: 574px;
+}
 .pt-6 {
     padding-top: 4rem;
 }
@@ -106,6 +123,33 @@ a {
 .z-90{
     z-index: 90;
 }
+.top-29{
+    top: -29px;
+}
+.top-30{
+    top: 30px;
+}
+.top-57{
+    top: -57px;
+}
+.top-250{
+    top: 250px;
+}
+.right-65{
+    right: 65px;
+}
+.right-78{
+    right: -78px;
+}
+.left-65{
+    left: 65px;
+}
+.left-78{
+    left: -78px;
+}
+.bottom-45{
+    bottom: -45px;
+}
 .gap-100 {
     gap: 100px;
 }
@@ -115,6 +159,9 @@ a {
 .rotate-180{
     transform: rotate(180deg);
 }
+.rounded-lg {
+    border-radius: .5rem;
+  }
 .rounded-4{
     border-radius: 1rem;
 }
@@ -284,6 +331,19 @@ header ul {
     background-color: #415571!important;
     box-shadow: 5px 4px 16px 1px black inset;
     border: none;
+}
+/* about page */
+.aboutCircles:hover div{
+    background-color: #243b5b!important;
+}
+.aboutCircles path,.aboutCircles rect{
+    transition: all .4s;
+}
+.aboutCircles:hover path,.aboutCircles:hover rect{
+    fill: #95d4dc;
+}
+.aboutCircles:hover p{
+    color: white;
 }
 /* footer */
 footer{
