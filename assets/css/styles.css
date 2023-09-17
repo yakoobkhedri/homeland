@@ -492,7 +492,15 @@ footer {
 footer svg {
     fill: white;
 }
-
+footer li a{
+    color: white;
+}
+footer li a:hover,footer a:hover p{
+    color: #c9a759!important;
+}
+footer a:hover svg{
+    fill: #c9a759!important;
+}
 footer #copyright {
     background-color: #405470;
 }
@@ -521,7 +529,7 @@ footer #copyright {
 
     }
 
-    header ul li a:hover {
+    header ul li a:hover,header ul li a.active {
         background-color: #f3f4f6;
         border-bottom: none;
     }
