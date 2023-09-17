@@ -41,6 +41,34 @@ var swiper = new Swiper(".projects", {
         el: ".swiper-pagination",
       },
 });
+var gallery = new Swiper(".gallery", {
+    loop: true,
+    autoplay: true,
+    spaceBetween: 40,
+    slidesPerView: 1,
+    thumbs: {
+        swiper: swiper,
+    },
+});
+var smallImgs = new Swiper(".smallImgs", {
+    loop: true,
+    autoplay: true,
+    spaceBetween: 24,
+    slidesPerView: 3,
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+        },
+        1200: {
+            slidesPerView: 3,
+        },
+        1500: {
+            slidesPerView: 4,
+        },
+    },
+    freeMode: true,
+    watchSlidesProgress: true,
+});
 // gallery Fancybox
 Fancybox.bind("[data-fancybox]", {
     // Your custom options
