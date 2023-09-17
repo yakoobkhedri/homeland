@@ -335,7 +335,7 @@ header ul li a {
     color: #243b5b !important;
 }
 
-header ul li a:hover {
+header ul li a:hover,header ul li a.active {
     border-bottom: 4px solid #c9a759;
     color: #243b5b !important;
 }
