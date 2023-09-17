@@ -18,7 +18,7 @@ aboutCircles.forEach((tab) => {
 })
 
 // swiper
-var swiper = new Swiper(".projects", {
+var projects = new Swiper(".projects", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 29,
@@ -41,35 +41,41 @@ var swiper = new Swiper(".projects", {
         el: ".swiper-pagination",
       },
 });
-var gallery = new Swiper(".gallery", {
+// swiper
+var blog = new Swiper(".blog", {
     loop: true,
-    autoplay: true,
-    spaceBetween: 40,
     slidesPerView: 1,
-    thumbs: {
-        swiper: swiper,
+    spaceBetween: 29,
+    breakpoints: {
+        576: {
+            slidesPerView: 1
+        },
+        992: {
+            slidesPerView: 2
+        },
+        1400: {
+            slidesPerView: 3
+        }
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
-var smallImgs = new Swiper(".smallImgs", {
-    loop: true,
-    autoplay: true,
-    spaceBetween: 24,
-    slidesPerView: 3,
-    breakpoints: {
-        768: {
-            slidesPerView: 4,
-        },
-        1200: {
-            slidesPerView: 3,
-        },
-        1500: {
-            slidesPerView: 4,
-        },
-    },
+var swiper = new Swiper(".smallImgs", {
+    spaceBetween: 10,
+    slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
-});
-// gallery Fancybox
-Fancybox.bind("[data-fancybox]", {
-    // Your custom options
-});
+  });
+  var swiper2 = new Swiper(".gallery", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+
