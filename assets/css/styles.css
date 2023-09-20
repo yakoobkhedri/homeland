@@ -131,6 +131,9 @@ a {
 .w-40 {
     width: 10rem;
 }
+.h-58 {
+    height: 58px;
+}
 .w-98{
     width: 98px;
 }
@@ -289,6 +292,9 @@ a {
 }
 .opacity-60{
     opacity: 60%;
+}
+.opacity-none{
+    opacity: 0;
 }
 .swiper-pagination-bullet {
     background-color: transparent;
