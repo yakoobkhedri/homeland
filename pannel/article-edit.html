@@ -277,7 +277,15 @@
               <div class="bg-white border rounded-3">
                 <div class="p-4 border-bottom font-bold">Detail</div>
                 <div class="p-4">
-
+                  <div id="editor"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="bg-white border rounded-3">
+                <div class="p-4 border-bottom font-bold">Excerpt</div>
+                <div class="p-4">
+                  <input class="form-control fs-12 fw-bold" value="في هذه المقالة سنتعرف على معنى وأنواع الطابو في تركيّا، والفرق بين الطابو الأحمر والطابو الأزرق، وما هjjjjjي رُسوم الطابو في تركيّا، وكيفية حصولك على الطابو التركيّ.">
                 </div>
               </div>
             </div>
@@ -294,6 +302,15 @@
   <script src="../assets/js/scripts.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/jquery.dataTables.min.js"></script>
+  <script src="../assets/js/ckeditor.js"></script>
+  <script>
+    ClassicEditor
+      .create(document.querySelector('#editor'))
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
+
 </body>
 
 </html>
