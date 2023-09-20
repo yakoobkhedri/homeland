@@ -19,6 +19,9 @@ body {
     background-color: #f7f9ff;
     overflow-x: hidden;
 }
+body.pannel{
+    overflow-x: visible;
+}
 
 .font-bold {
     font-family: "IRANSans-Bold";
@@ -587,6 +590,13 @@ header ul {
   }
   .dropdown-item:hover {
     background-color: transparent;
+  }
+  .project .select2-container {
+     width: auto!important;
+     min-width: 99px;
+  }
+  .project .select2-container--default .select2-selection--multiple {
+    height: 44px;
   }
 /* footer */
 footer {
