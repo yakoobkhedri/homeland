@@ -1,10 +1,10 @@
 // about chart
-let aboutCircles=Array.from(document.getElementsByClassName('aboutCircles'));
-let circleContent=Array.from(document.getElementsByClassName('circleContent'));
+let aboutCircles = Array.from(document.getElementsByClassName('aboutCircles'));
+let circleContent = Array.from(document.getElementsByClassName('circleContent'));
 
 
 aboutCircles.forEach((tab) => {
-    tab.addEventListener('click', function() {
+    tab.addEventListener('click', function () {
         let tabId = tab.dataset.id;
         circleContent.forEach((content) => {
             let contentId = content.dataset.id;
@@ -37,9 +37,9 @@ var projects = new Swiper(".projects", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-      pagination: {
+    pagination: {
         el: ".swiper-pagination",
-      },
+    },
 });
 // swiper
 var blog = new Swiper(".blog", {
@@ -67,15 +67,33 @@ var swiper = new Swiper(".smallImgs", {
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
-  });
-  var swiper2 = new Swiper(".gallery", {
+});
+var swiper2 = new Swiper(".gallery", {
     spaceBetween: 10,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     thumbs: {
-      swiper: swiper,
+        swiper: swiper,
     },
-  });
+});
 
+
+// pannel
+
+
+// open sidebar
+
+let openSidebar=document.getElementById('openSidebar');
+let sidebar=document.getElementById('sidebar');
+let overlay=document.getElementById('overlay');
+
+openSidebar.addEventListener('click',function () {
+    sidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+})
+overlay.addEventListener('click',function () {
+    overlay.classList.remove('active');
+    sidebar.classList.remove('active');
+})

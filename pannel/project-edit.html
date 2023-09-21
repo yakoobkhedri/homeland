@@ -15,13 +15,16 @@
   <title>Project Edit</title>
 </head>
 
-<body class="bg-gray3">
+<body class="bg-gray3 pannel">
+
+  <!-- overlay -->
+  <div id="overlay" class="bg-dark position-fixed end-0 top-0 start-0 bottom-0 opacity-60 z-90 d-xl-none active"></div>
 
   <section class="d-flex h-100vh">
     <!-- sidebar -->
-    <div id="sidebar" class="bg-white w-270 shadow-sm border-end">
+    <div id="sidebar" class="bg-white transition flex-shrink-0 shadow-sm border-end active">
       <a class="d-flex items-center p-1 py-3 justify-content-center mx-auto gap-5" href="index.html"><svg
-          xmlns="http://www.w3.org/2000/svg" class="w-75" viewBox="0 0 114.52 78.547">
+          xmlns="http://www.w3.org/2000/svg" class="w-193 h-136 flex-shrink-0" viewBox="0 0 114.52 78.547">
           <g id="Group_746" data-name="Group 746" transform="translate(-1428.828 -18)">
             <path id="Path_4" data-name="Path 4"
               d="M1516.6,67.887,1516.592,18h-61.258l-.008,49.887h-8.59v2.544h11.142V53.313l12.811-7.4v21.97h-6.6V58.94h1.737v7.21h2.545V56.4h-6.826V70.431h21.327V36.377l-12.183-7.034v12.59l2.545-1.47V33.742l7.094,4.1V67.887h-7.094V41.514l-6.184,3.57V24.293h8.459v6.783l2.544,1.47v-10.8h-13.547V46.553l-6.627,3.826V20.544h56.17V50.38l-6.629-3.827V21.748h-13.547v10.8l2.544-1.47V24.293h8.459V45.084l-6.184-3.57V67.887H1491.6V37.838l7.094-4.1v6.721l2.544,1.47V29.343l-12.183,7.034V54.464h-5.27v2.545h5.265V70.022l0,.409h21.327V56.4h-6.826V66.15h2.544V58.94h1.737v8.946h-6.6V45.916l12.812,7.4V70.022l.006.409h11.134V67.887Z"
@@ -90,7 +93,7 @@
         <h5 class="main-text font-bold px-4">Dashboard</h5>
         <ul class="list-unstyled p-0 mt-4">
           <li class="transition">
-            <a class="d-flex align-items-center gap-2 py-3 px-4 text-dark fw-bold">
+            <a href="index.html" class="d-flex align-items-center gap-2 py-3 px-4 text-dark fw-bold">
               <svg viewBox="64 64 896 896" focusable="false" data-icon="home" width="1em" height="1em"
                 fill="currentColor" aria-hidden="true">
                 <path
@@ -101,7 +104,7 @@
             </a>
           </li>
           <li class="transition active">
-            <a class="d-flex align-items-center gap-2 py-3 px-4 text-dark fw-bold">
+            <a href="project.html" class="d-flex align-items-center gap-2 py-3 px-4 text-dark fw-bold">
               <svg viewBox="64 64 896 896" focusable="false" data-icon="home" width="1em" height="1em"
                 fill="currentColor" aria-hidden="true">
                 <path
@@ -112,33 +115,35 @@
             </a>
           </li>
           <li class="transition">
-            <a class="d-flex align-items-center gap-2 py-3 px-4 text-dark fw-bold">
-              <svg viewBox="64 64 896 896" focusable="false" data-icon="home" width="1em" height="1em"
-                fill="currentColor" aria-hidden="true">
-                <path
-                  d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 00-44.4 0L77.5 505a63.9 63.9 0 00-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0018.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z">
+            <a href="article.html" class="d-flex align-items-center gap-2 py-3 px-4 text-dark fw-bold">
+              <svg width="1em" height="1em" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArticleOutlinedIcon"
+                style="font-size: 1rem;">
+                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z">
                 </path>
+                <path d="M14 17H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"></path>
               </svg>
               <p class="mb-0">Article</p>
             </a>
           </li>
           <li class="transition">
-            <a class="d-flex align-items-center gap-2 py-3 px-4 text-dark fw-bold">
-              <svg viewBox="64 64 896 896" focusable="false" data-icon="home" width="1em" height="1em"
-                fill="currentColor" aria-hidden="true">
+            <a href="district.html" class="d-flex align-items-center gap-2 py-3 px-4 text-dark fw-bold">
+              <svg width="1em" height="1em" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="PlaceOutlinedIcon"
+                style="font-size: 1rem;">
                 <path
-                  d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 00-44.4 0L77.5 505a63.9 63.9 0 00-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0018.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z">
+                  d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z">
                 </path>
               </svg>
               <p class="mb-0">District</p>
             </a>
           </li>
           <li class="transition">
-            <a class="d-flex align-items-center gap-2 py-3 px-4 text-dark fw-bold">
-              <svg viewBox="64 64 896 896" focusable="false" data-icon="home" width="1em" height="1em"
-                fill="currentColor" aria-hidden="true">
+            <a href="setting.html" class="d-flex align-items-center gap-2 py-3 px-4 text-dark fw-bold">
+              <svg width="1em" height="1em" viewBox="64 64 896 896" focusable="false" data-icon="setting" width="1em"
+                height="1em" fill="currentColor" aria-hidden="true">
                 <path
-                  d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 00-44.4 0L77.5 505a63.9 63.9 0 00-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0018.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z">
+                  d="M924.8 625.7l-65.5-56c3.1-19 4.7-38.4 4.7-57.8s-1.6-38.8-4.7-57.8l65.5-56a32.03 32.03 0 009.3-35.2l-.9-2.6a443.74 443.74 0 00-79.7-137.9l-1.8-2.1a32.12 32.12 0 00-35.1-9.5l-81.3 28.9c-30-24.6-63.5-44-99.7-57.6l-15.7-85a32.05 32.05 0 00-25.8-25.7l-2.7-.5c-52.1-9.4-106.9-9.4-159 0l-2.7.5a32.05 32.05 0 00-25.8 25.7l-15.8 85.4a351.86 351.86 0 00-99 57.4l-81.9-29.1a32 32 0 00-35.1 9.5l-1.8 2.1a446.02 446.02 0 00-79.7 137.9l-.9 2.6c-4.5 12.5-.8 26.5 9.3 35.2l66.3 56.6c-3.1 18.8-4.6 38-4.6 57.1 0 19.2 1.5 38.4 4.6 57.1L99 625.5a32.03 32.03 0 00-9.3 35.2l.9 2.6c18.1 50.4 44.9 96.9 79.7 137.9l1.8 2.1a32.12 32.12 0 0035.1 9.5l81.9-29.1c29.8 24.5 63.1 43.9 99 57.4l15.8 85.4a32.05 32.05 0 0025.8 25.7l2.7.5a449.4 449.4 0 00159 0l2.7-.5a32.05 32.05 0 0025.8-25.7l15.7-85a350 350 0 0099.7-57.6l81.3 28.9a32 32 0 0035.1-9.5l1.8-2.1c34.8-41.1 61.6-87.5 79.7-137.9l.9-2.6c4.5-12.3.8-26.3-9.3-35zM788.3 465.9c2.5 15.1 3.8 30.6 3.8 46.1s-1.3 31-3.8 46.1l-6.6 40.1 74.7 63.9a370.03 370.03 0 01-42.6 73.6L721 702.8l-31.4 25.8c-23.9 19.6-50.5 35-79.3 45.8l-38.1 14.3-17.9 97a377.5 377.5 0 01-85 0l-17.9-97.2-37.8-14.5c-28.5-10.8-55-26.2-78.7-45.7l-31.4-25.9-93.4 33.2c-17-22.9-31.2-47.6-42.6-73.6l75.5-64.5-6.5-40c-2.4-14.9-3.7-30.3-3.7-45.5 0-15.3 1.2-30.6 3.7-45.5l6.5-40-75.5-64.5c11.3-26.1 25.6-50.7 42.6-73.6l93.4 33.2 31.4-25.9c23.7-19.5 50.2-34.9 78.7-45.7l37.9-14.3 17.9-97.2c28.1-3.2 56.8-3.2 85 0l17.9 97 38.1 14.3c28.7 10.8 55.4 26.2 79.3 45.8l31.4 25.8 92.8-32.9c17 22.9 31.2 47.6 42.6 73.6L781.8 426l6.5 39.9zM512 326c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 614c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 502c0-29.9 11.7-58 32.8-79.2C454 401.6 482.1 390 512 390c29.9 0 58 11.6 79.2 32.8A111.6 111.6 0 01624 502c0 29.9-11.7 58-32.8 79.2z">
                 </path>
               </svg>
               <p class="mb-0">Settings</p>
@@ -149,7 +154,8 @@
     </div>
     <div class="flex-grow-1">
       <div class="d-flex align-items-center justify-content-between bg-white py-2 border-bottom px-2">
-        <div class="w-36 h-36 bg-gray rounded-3 d-flex align-items-center justify-content-center cursor-pointer">
+        <div id="openSidebar"
+          class="w-36 h-36 bg-gray rounded-3 d-flex align-items-center justify-content-center cursor-pointer">
           <svg viewBox="64 64 896 896" focusable="false" data-icon="menu-fold" width="1em" height="1em"
             fill="currentColor" aria-hidden="true">
             <path
@@ -199,8 +205,8 @@
         </div>
 
       </div>
-      <div class="py-4 px-5">
-        <form>
+      <div class="py-4 project pannelContent">
+        <form class="container">
           <input type="submit" value="Submit"
             class="btn btn-primary fw-bold mb-3 px-4 py-2 ms-auto d-table position-sticky top-0">
           <div class="row g-4">
@@ -208,11 +214,14 @@
               <div class="bg-white border rounded-3">
                 <div class="p-4 border-bottom font-bold">Translation</div>
                 <div class="p-4">
-                  <div class="row border rounded-3 overflow-hidden fw-bold text-secondary">
-                    <div class="col-3 py-3 text-center cursor-pointer border-end">Arabic</div>
-                    <div class="col-3 py-3 text-center cursor-pointer border-end">English</div>
-                    <div class="col-3 py-3 text-center cursor-pointer border-end">Persian</div>
-                    <div class="col-3 py-3 text-center cursor-pointer">Russian</div>
+                  <div class="row border rounded-3 overflow-hidden fw-bold">
+                    <div class="col-3 btn-outline-light text-secondary py-3 text-center cursor-pointer border-end">
+                      Arabic</div>
+                    <div class="col-3 py-3 btn-outline-light text-secondary text-center cursor-pointer border-end">
+                      English</div>
+                    <div class="col-3 py-3 btn-outline-light text-secondary text-center cursor-pointer border-end">
+                      Persian</div>
+                    <div class="col-3 py-3 btn-outline-light text-secondary text-center cursor-pointer">Russian</div>
                   </div>
                 </div>
               </div>
@@ -221,22 +230,30 @@
               <div class="bg-white border rounded-3 h-100">
                 <div class="p-4 border-bottom font-bold">Publish</div>
                 <div class="p-4">
-                  <div class="d-flex mt-3 align-items-center gap-3">
-                    <label class="cursor-pointer fw-bold fs-14">
+                  <div class="d-flex flex-wrap align-items-center gap-3">
+                    <label class="cursor-pointer d-flex align-items-center fw-bold fs-14">
                       <input type="checkbox" class="form-check-input cursor-pointer me-2">
-                      Arabic
+                      <p class="mb-0">
+                        Arabic
+                      </p>
                     </label>
-                    <label class="cursor-pointer fw-bold fs-14">
+                    <label class="cursor-pointer d-flex align-items-center fw-bold fs-14">
                       <input type="checkbox" class="form-check-input cursor-pointer me-2">
-                      English
+                      <p class="mb-0">
+                        English
+                      </p>
                     </label>
-                    <label class="cursor-pointer fw-bold fs-14">
+                    <label class="cursor-pointer d-flex align-items-center fw-bold fs-14">
                       <input type="checkbox" class="form-check-input cursor-pointer me-2">
-                      Persian
+                      <p class="mb-0">
+                        Persian
+                      </p>
                     </label>
-                    <label class="cursor-pointer fw-bold fs-14">
+                    <label class="cursor-pointer d-flex align-items-center fw-bold fs-14">
                       <input type="checkbox" class="form-check-input cursor-pointer me-2">
-                      Russian
+                      <p class="mb-0">
+                        Russian
+                      </p>
                     </label>
                   </div>
                 </div>
@@ -249,16 +266,14 @@
                   <img alt="blog" src="../assets/img/project5.webp" class="img-fluid">
                   <div class="d-flex flex-column gap-3 align-items-center mt-4">
                     <div class="form-floating px-1 w-100 fs-14">
-                      <input class="form-control fs-14 fw-bold mt-2" id="floatingPassword"
-                        value="باجیلار">
+                      <input class="form-control fs-14 fw-bold mt-2" id="floatingPassword" value="Alya Bahce Villa">
                       <label for="floatingPassword fs-12">Project Name</label>
                     </div>
                     <div class="form-floating px-1 w-100 fs-14">
-                      <input class="form-control fs-14 fw-bold mt-2" id="floatingPassword"
-                        value="HL100BH">
+                      <input class="form-control fs-14 fw-bold mt-2" id="floatingPassword" value="HL100BH">
                       <label for="floatingPassword fs-12">Project Code</label>
                     </div>
-                    <div class="form-floating px-1 w-100 fs-14 border h-58 rounded-3 position-relative">
+                    <div class="form-floating overflow-hidden px-1 w-100 fs-14 border h-58 rounded-3 position-relative">
                       <input type="file"
                         class="form-control opacity-none fs-14 w-100 h-100 fw-bold position-absolute end-0 top-0 start-0 bottom-0"
                         id="floatingPassword" value="العقارات والطابو في تركيّا">
@@ -279,18 +294,889 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="bg-white border rounded-3">
-                <div class="p-4 border-bottom font-bold">Location</div>
+              <div class="bg-white border rounded-3 h-100">
+                <div class="p-4 border-bottom font-bold">Backend</div>
                 <div class="p-4">
-                  <div class="form-floating">
-                    <select class="form-select fw-bold" id="floatingSelect" aria-label="Floating label select example">
-                      <option selected>buyukcekmece</option>
-                      <option value="1">Cekmekoy</option>
-                      <option value="2">florya</option>
-                      <option value="3">maltepe</option>
-                    </select>
-                    <label for="floatingSelect">Location</label>
+                  <div class="row g-4">
+                    <div class="col-lg-6">
+                      <div class="form-floating px-1 w-100 fs-14">
+                        <input class="form-control fs-14 fw-bold mt-2" id="floatingPassword" value="Boss4 Insaat">
+                        <label for="floatingPassword fs-12">Construction Company</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-floating px-1 w-100 fs-14">
+                        <input class="form-control fs-14 fw-bold mt-2" id="floatingPassword" value="Nest">
+                        <label for="floatingPassword fs-12">Bazaarlama Company</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-floating px-1 w-100 fs-14">
+                        <input class="form-control fs-14 fw-bold mt-2" id="floatingPassword"
+                          value="https://goo.gl/maps/QHo4uqYWsnnQUaAe6">
+                        <label for="floatingPassword fs-12">Location Map</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-floating px-1 w-100 fs-14">
+                        <input class="form-control fs-14 fw-bold mt-2" id="floatingPassword"
+                          value="https://linktr.ee/nestinvest">
+                        <label for="floatingPassword fs-12">Drive Link</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-floating px-1 w-100 fs-14">
+                        <input class="form-control fs-14 fw-bold mt-2" id="floatingPassword" value="Sales Office">
+                        <label for="floatingPassword fs-12">Sales Office</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                      <label class="cursor-pointer">
+                        <input type="checkbox" class="form-check-input">
+                        Visited
+                      </label>
+                    </div>
+                    <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                      <label class="cursor-pointer">
+                        <input type="checkbox" class="form-check-input">
+                        Tabu
+                        Ready
+                      </label>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="form-floating px-1 w-100 fs-14">
+                        <input class="form-control fs-14 fw-bold mt-2" id="floatingPassword" value="Note">
+                        <label for="floatingPassword fs-12">Note</label>
+                      </div>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-white border rounded-3 h-100">
+                <div class="p-4 border-bottom font-bold">Numbers</div>
+                <div class="p-4">
+                  <div class="row border rounded-3 fs-10 overflow-hidden fw-bold text-secondary">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">Price</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">Area</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">No of Apartment</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">No of Block</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">No of Floors</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">No of Shops</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-white border rounded-3">
+                <div class="p-4 border-bottom font-bold">Away From</div>
+                <div class="p-4">
+                  <div class="row border rounded-3 fs-10 overflow-hidden fw-bold text-secondary">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">Hospital</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">Shop</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">Metro</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">Airport</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">Bus</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">Citycenter</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">IstanbulCanal</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">SandyBeach</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">Lake</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">Highway</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">University</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold h-36">School</label>
+                        <input type="number" class="w-60" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 filter">
+              <div class="bg-white border rounded-3">
+                <div class="p-4 border-bottom font-bold">Filter</div>
+                <div class="p-4">
+                  <div class="row border rounded-3 overflow-hidden fw-bold text-secondary">
+                    <div class="col-lg-6 py-3 text-center">
+                      <div class="form-floating">
+                        <select class="form-select fw-bold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected="">buyukcekmece</option>
+                          <option value="1">Cekmekoy</option>
+                          <option value="2">florya</option>
+                          <option value="3">maltepe</option>
+                        </select>
+                        <label for="floatingSelect">Location</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 py-3 text-center">
+                      <div class="form-floating">
+                        <select class="form-select fw-bold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected="">ready</option>
+                          <option value="1">under</option>
+                          <option value="2">ready+under</option>
+                          <option value="3">Sold</option>
+                        </select>
+                        <label for="floatingSelect">Status</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 py-3 text-center">
+                      <div class="mb-1" data-select2-id="">
+                        <label class="d-block fw-bold mb-2 fs-14">Project Type</label>
+                        <select class="js-example-basic-multiple py-2 select2-hidden-accessible"
+                          multiple="" data-select2-id="select2-data-1-tc5n" tabindex="-1" aria-hidden="true">
+                          <option data-select2-id="select2-data-12-ffmy">investment</option>
+                          <option data-select2-id="select2-data-13-350u">villa</option>
+                          <option data-select2-id="select2-data-14-5yxd">lands</option>
+                          <option data-select2-id="select2-data-15-b44l">shops</option>
+                          <option data-select2-id="select2-data-16-y8gg">residential</option>
+                          <option data-select2-id="select2-data-17-2bhq">apartment</option>
+                          <option data-select2-id="select2-data-18-1won">citizenship</option>
+                          <option data-select2-id="select2-data-19-txv5">office</option>
+                          <option data-select2-id="select2-data-20-3oh6">palace</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 py-3 text-center">
+                      <div class="mb-1" data-select2-id="">
+                        <label class="d-block fw-bold mb-2 fs-14">Room</label>
+                        <select class="js-example-basic-multiple py-2 select2-hidden-accessible"
+                          multiple="" data-select2-id="select2-data-1-tc5n2" tabindex="-1" aria-hidden="true">
+                          <option data-select2-id="select2-data-12-ffmy">investment</option>
+                          <option data-select2-id="select2-data-13-350u">villa</option>
+                          <option data-select2-id="select2-data-14-5yxd">lands</option>
+                          <option data-select2-id="select2-data-15-b44l">shops</option>
+                          <option data-select2-id="select2-data-16-y8gg">residential</option>
+                          <option data-select2-id="select2-data-17-2bhq">apartment</option>
+                          <option data-select2-id="select2-data-18-1won">citizenship</option>
+                          <option data-select2-id="select2-data-19-txv5">office</option>
+                          <option data-select2-id="select2-data-20-3oh6">palace</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 py-3 text-center">
+                      <div class="mb-1" data-select2-id="">
+                        <label class="d-block fw-bold mb-2 fs-14">Feature</label>
+                        <select class="js-example-basic-multiple py-2 select2-hidden-accessible"
+                          multiple="" data-select2-id="select2-data-1-tc5n3" tabindex="-1" aria-hidden="true">
+                          <option >investment</option>
+                          <option >villa</option>
+                          <option >lands</option>
+                          <option >shops</option>
+                          <option >residential</option>
+                          <option >apartment</option>
+                          <option >citizenship</option>
+                          <option >office</option>
+                          <option >palace</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 py-3 text-center">
+                      <div class="mb-1" data-select2-id="">
+                        <label class="d-block fw-bold mb-2 fs-14">Payment Type</label>
+                        <select class="js-example-basic-multiple py-2 select2-hidden-accessible"
+                          multiple="" data-select2-id="select2-data-1-tc5n4" tabindex="-1" aria-hidden="true">
+                          <option >Cash</option>
+                          <option >Installment</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-white border rounded-3 h-100">
+                <div class="p-4 border-bottom font-bold">Optional</div>
+                <div class="p-4">
+                  <div class="row border rounded-3 overflow-hidden fw-bold text-secondary">
+                    <div class="col-12 py-3 text-center">
+                      <div class="form-floating px-1 w-100 fs-14">
+                        <input type="date" class="form-control fs-14 fw-bold mt-2" id="floatingPassword"
+                          value="11/30/2024">
+                        <label for="floatingPassword fs-12">Delivery Date</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Down Payment</label>
+                        <input type="number" class="" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 py-3 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Installment</label>
+                        <input type="number" class="" value="0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-white border rounded-3">
+                <div class="p-4 border-bottom font-bold">Gallery</div>
+                <div class="p-4">
+                  <div
+                    class="rounded-4 border-dashed position-relative py-5 px-2 bg-gray d-flex align-items-center justify-content-center">
+                    <input type="file"
+                      class="position-absolute end-0 start-0 bottom-0 top-0 w-100 h-100 opacity-none cursor-pointer">
+                    <div>
+                      <h6 class="text-center font-bold fs-14">Drag and drop some files here, or click to select files
+                      </h6>
+                      <svg class="d-block mx-auto text-secondary" viewBox="64 64 896 896" focusable="false"
+                        data-icon="cloud-upload" width="33" height="33" fill="currentColor" aria-hidden="true">
+                        <path
+                          d="M518.3 459a8 8 0 00-12.6 0l-112 141.7a7.98 7.98 0 006.3 12.9h73.9V856c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V613.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 459z">
+                        </path>
+                        <path
+                          d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7-23.5-24.2-36-56.8-34.9-90.6.9-26.4 9.9-51.2 26.2-72.1 16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9 13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0152.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9 15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5 37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 01-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mt-4 row g-2">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery2.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery3.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery4.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery5.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery6.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery7.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery8.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery2.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery3.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery4.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery5.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery6.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery7.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 px-1">
+                      <div class="position-relative">
+                        <div class="d-flex align-items-center gap-3 position-absolute top-0">
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DeleteIcon">
+                              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z">
+                              </path>
+                            </svg>
+                          </a>
+                          <a class="d-block cursor-pointer">
+                            <svg width="26" height="26" class="fill-white" focusable="false" aria-hidden="true"
+                              viewBox="0 0 24 24" data-testid="DownloadIcon">
+                              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg> </a>
+                        </div>
+                        <img alt="gallery" src="../assets/img/gallery8.webp" class="img-fluid h-180 w-100">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-white border rounded-3 h-100">
+                <div class="p-4 border-bottom font-bold">Plan Image</div>
+                <div class="p-4">
+                  <div class="row align-items-center mb-3 g-3">
+                    <div class="col-lg-6">
+                      <div class="form-floating mb-3">
+                        <select class="form-select fw-bold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected="">buyukcekmece</option>
+                          <option value="1">Cekmekoy</option>
+                          <option value="2">florya</option>
+                          <option value="3">maltepe</option>
+                        </select>
+                        <label for="floatingSelect">Location</label>
+                      </div>
+                      <div
+                        class="form-floating px-1 w-100 overflow-hidden fs-14 border h-58 rounded-3 position-relative">
+                        <input type="file"
+                          class="form-control opacity-none fs-14 w-100 h-100 fw-bold position-absolute end-0 top-0 start-0 bottom-0"
+                          id="floatingPassword" value="العقارات والطابو في تركيّا">
+                        <label for="floatingPassword fs-12">Selected Thumbnail image</label>
+                        <div class="d-flex align-items-center gap-2 mt-4 mb-2">
+                          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv flex-shrink-0" width="22"
+                            height="22" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                            data-testid="AttachFileIcon">
+                            <path
+                              d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z">
+                            </path>
+                          </svg>
+                          <span class="fw-bold">d91ef15064a249598f935941bbd3c807.webp</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <img alt="Plan" src="../assets/img/plan1.webp" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="row align-items-center mb-3 g-3">
+                    <div class="col-lg-6">
+                      <div class="form-floating mb-3">
+                        <select class="form-select fw-bold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected="">buyukcekmece</option>
+                          <option value="1">Cekmekoy</option>
+                          <option value="2">florya</option>
+                          <option value="3">maltepe</option>
+                        </select>
+                        <label for="floatingSelect">Location</label>
+                      </div>
+                      <div
+                        class="form-floating px-1 w-100 overflow-hidden fs-14 border h-58 rounded-3 position-relative">
+                        <input type="file"
+                          class="form-control opacity-none fs-14 w-100 h-100 fw-bold position-absolute end-0 top-0 start-0 bottom-0"
+                          id="floatingPassword" value="العقارات والطابو في تركيّا">
+                        <label for="floatingPassword fs-12">Selected Thumbnail image</label>
+                        <div class="d-flex align-items-center gap-2 mt-4 mb-2">
+                          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv flex-shrink-0" width="22"
+                            height="22" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                            data-testid="AttachFileIcon">
+                            <path
+                              d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z">
+                            </path>
+                          </svg>
+                          <span class="fw-bold">d91ef15064a249598f935941bbd3c807.webp</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <img alt="Plan" src="../assets/img/plan1.webp" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="row align-items-center mb-3 g-3">
+                    <div class="col-lg-6">
+                      <div class="form-floating mb-3">
+                        <select class="form-select fw-bold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected="">buyukcekmece</option>
+                          <option value="1">Cekmekoy</option>
+                          <option value="2">florya</option>
+                          <option value="3">maltepe</option>
+                        </select>
+                        <label for="floatingSelect">Location</label>
+                      </div>
+                      <div
+                        class="form-floating px-1 w-100 overflow-hidden fs-14 border h-58 rounded-3 position-relative">
+                        <input type="file"
+                          class="form-control opacity-none fs-14 w-100 h-100 fw-bold position-absolute end-0 top-0 start-0 bottom-0"
+                          id="floatingPassword" value="العقارات والطابو في تركيّا">
+                        <label for="floatingPassword fs-12">Selected Thumbnail image</label>
+                        <div class="d-flex align-items-center gap-2 mt-4 mb-2">
+                          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv flex-shrink-0" width="22"
+                            height="22" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                            data-testid="AttachFileIcon">
+                            <path
+                              d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z">
+                            </path>
+                          </svg>
+                          <span class="fw-bold">d91ef15064a249598f935941bbd3c807.webp</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <img alt="Plan" src="../assets/img/plan1.webp" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="row align-items-center mb-3 g-3">
+                    <div class="col-lg-6">
+                      <div class="form-floating mb-3">
+                        <select class="form-select fw-bold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected="">buyukcekmece</option>
+                          <option value="1">Cekmekoy</option>
+                          <option value="2">florya</option>
+                          <option value="3">maltepe</option>
+                        </select>
+                        <label for="floatingSelect">Location</label>
+                      </div>
+                      <div
+                        class="form-floating px-1 w-100 overflow-hidden fs-14 border h-58 rounded-3 position-relative">
+                        <input type="file"
+                          class="form-control opacity-none fs-14 w-100 h-100 fw-bold position-absolute end-0 top-0 start-0 bottom-0"
+                          id="floatingPassword" value="العقارات والطابو في تركيّا">
+                        <label for="floatingPassword fs-12">Selected Thumbnail image</label>
+                        <div class="d-flex align-items-center gap-2 mt-4 mb-2">
+                          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv flex-shrink-0" width="22"
+                            height="22" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                            data-testid="AttachFileIcon">
+                            <path
+                              d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z">
+                            </path>
+                          </svg>
+                          <span class="fw-bold">d91ef15064a249598f935941bbd3c807.webp</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <img alt="Plan" src="../assets/img/plan1.webp" class="img-fluid">
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-primary ms-auto d-table">Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
+              <div class="bg-white border rounded-3 h-100">
+                <div class="p-4 border-bottom font-bold">Price Plan</div>
+                <div class="p-4">
+                  <div class="row overflow-hidden fw-bold text-secondary">
+                    <div class="col-12 py-1 text-center">
+                      <div class="form-floating px-1 w-100 fs-14">
+                        <input type="date" class="form-control fs-14 fw-bold mt-2" id="floatingPassword"
+                          value="11/30/2024">
+                        <label for="floatingPassword fs-12">Update Price Date</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="form-floating mt-3">
+                        <select class="form-select fw-bold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option data-select2-id="select2-data-6-5hse">0+1</option>
+                          <option data-select2-id="select2-data-7-qb7h">1+2</option>
+                          <option data-select2-id="select2-data-8-qtep">1+2 Duplex</option>
+                          <option data-select2-id="select2-data-9-wi8g">1+3</option>
+                          <option data-select2-id="select2-data-10-rgnx">1+4</option>
+                        </select>
+                        <label for="floatingSelect">Room</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Area From</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Area To</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Price</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="form-floating mt-3">
+                        <select class="form-select fw-bold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option data-select2-id="select2-data-6-5hse">0+1</option>
+                          <option data-select2-id="select2-data-7-qb7h">1+2</option>
+                          <option data-select2-id="select2-data-8-qtep">1+2 Duplex</option>
+                          <option data-select2-id="select2-data-9-wi8g">1+3</option>
+                          <option data-select2-id="select2-data-10-rgnx">1+4</option>
+                        </select>
+                        <label for="floatingSelect">Room</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Area From</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Area To</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Price</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="form-floating mt-3">
+                        <select class="form-select fw-bold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option data-select2-id="select2-data-6-5hse">0+1</option>
+                          <option data-select2-id="select2-data-7-qb7h">1+2</option>
+                          <option data-select2-id="select2-data-8-qtep">1+2 Duplex</option>
+                          <option data-select2-id="select2-data-9-wi8g">1+3</option>
+                          <option data-select2-id="select2-data-10-rgnx">1+4</option>
+                        </select>
+                        <label for="floatingSelect">Room</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Area From</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Area To</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Price</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="form-floating mt-3">
+                        <select class="form-select fw-bold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option data-select2-id="select2-data-6-5hse">0+1</option>
+                          <option data-select2-id="select2-data-7-qb7h">1+2</option>
+                          <option data-select2-id="select2-data-8-qtep">1+2 Duplex</option>
+                          <option data-select2-id="select2-data-9-wi8g">1+3</option>
+                          <option data-select2-id="select2-data-10-rgnx">1+4</option>
+                        </select>
+                        <label for="floatingSelect">Room</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Area From</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Area To</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-1 text-center">
+                      <div class="mb-1">
+                        <label class="d-block fw-bold mb-2">Price</label>
+                        <input type="number" class="w-100" value="0">
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-primary ms-auto mt-3 d-table">Add</button>
                 </div>
               </div>
             </div>
@@ -306,7 +1192,8 @@
               <div class="bg-white border rounded-3">
                 <div class="p-4 border-bottom font-bold">Excerpt</div>
                 <div class="p-4">
-                  <input class="form-control fs-12 fw-bold" value="في هذه المقالة سنتعرف على معنى وأنواع الطابو في تركيّا، والفرق بين الطابو الأحمر والطابو الأزرق، وما هjjjjjي رُسوم الطابو في تركيّا، وكيفية حصولك على الطابو التركيّ.">
+                  <input class="form-control fs-12 fw-bold"
+                    value="في هذه المقالة سنتعرف على معنى وأنواع الطابو في تركيّا، والفرق بين الطابو الأحمر والطابو الأزرق، وما هjjjjjي رُسوم الطابو في تركيّا، وكيفية حصولك على الطابو التركيّ.">
                 </div>
               </div>
             </div>
@@ -330,6 +1217,12 @@
       .catch(error => {
         console.error(error);
       });
+  </script>
+   <script>
+    // select
+    $(document).ready(function () {
+      $('.js-example-basic-multiple').select2();
+    });
   </script>
 
 </body>
