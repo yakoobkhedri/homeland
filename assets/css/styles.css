@@ -850,6 +850,12 @@ footer #copyright {
     #banner a {
         width: 100% !important;
     }
+    .gallery img{
+        height: 333px;
+    }
+    .smallImgs img {
+        height: 92px;
+    }
 }
 @media only screen and (max-width:576px) {
     .pannel .container{
