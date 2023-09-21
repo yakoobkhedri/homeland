@@ -733,7 +733,6 @@ input[type='submit']{
     /* scroll thumb and track */
     scroll-margin: 29px 0;
 }
-
 /* footer */
 footer {
     background-color: #243b5b;
@@ -758,6 +757,11 @@ footer a:hover svg {
 
 footer #copyright {
     background-color: #405470;
+}
+@media only screen and (min-width:1200px) {
+.projectPage .container{
+    max-width: 960px;
+}
 }
 @media only screen and (max-width:1200px) {
     
